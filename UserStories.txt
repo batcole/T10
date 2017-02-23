@@ -3,3 +3,5 @@ This file contains the user stories for the project.
 1. A user is presented with the login screen and can either choose to authenticate via Facebook or Google. They click on the button for which authentication method and advance to either the preferences screen if they are an existing user, or the ———in progress.
 
 2. User can search movies and view lists relating to price offerings on different media services.
+
+3. Third story here
