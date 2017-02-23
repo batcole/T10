@@ -4,4 +4,4 @@ This file contains the user stories for the project.
 
 2. User can search movies and view lists relating to price offerings on different media services.
 
-3. conflicted!!!!
+3. Third story here
