@@ -4,4 +4,4 @@ This file contains the user stories for the project.
 
 2. User can search movies and view lists relating to price offerings on different media services. They can scroll up and down in this list, and click on the links for each result. Upon clicking, the user is taken to the correct target website where their movie is passed as a URL parameter.
 
-3. Third story here
+3. There is a history button where, upon clicking the button, the user can view his/her viewing and search history. 
