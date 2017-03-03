@@ -1,7 +1,0 @@
-This file contains the user stories for the project.
-
-1. A user is presented with the login screen and can either choose to authenticate via Facebook or Google. They click on the button for which authentication method they prefer to use and advance to either the search screen if they are an existing user, or the subscription page if they are a new user. 
-
-2. User can search movies and view lists relating to price offerings on different media services. They can scroll up and down in this list, and click on the links for each result. Upon clicking, the user is taken to the correct target website where their movie is passed as a URL parameter.
-
-3. There is a history button where, upon clicking the button, the user can view his/her viewing and search history. 
