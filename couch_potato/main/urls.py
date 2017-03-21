@@ -25,11 +25,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     
     # ex: /main/5/
-    url(r'^specifics/(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
-    
-    # ex: /main/5/results/
-    url(r'^(?P<question_id>[0-9]+)/results/$', views.results, name='results'),
-    
-    # ex: /main/5/vote/
-    url(r'^(?P<question_id>[0-9]+)/vote/$', views.vote, name='vote'),
+    url(r'^(?P<movie_id>[0-9]+)/$', views.detail, name='detail'),
 ]
