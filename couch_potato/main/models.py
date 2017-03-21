@@ -8,9 +8,9 @@ from .tmdb import search_for_movie
 # Create your models here.
 
 class Movie(models.Model):
-    name = models.CharField(max_length=200, default="unnamed")
+    name = models.CharField(max_length=200)
     number = models.IntegerField(default=0)
-    description = models.CharField(max_length=200, default="undescribed")
+    description = models.TextField()
     
     def __str__(self):
         return "Name: " + self.name + " Number: " + str(self.number)
@@ -21,6 +21,8 @@ def intialize_movie(**kwargs):
 
     if len(options) > 0:
         instance.description = options[0]["overview"]
+        instance.number = options[0]["id"]
+        instance.name = options[0]["original_title"]
     else:
         instance.description = "Unable to locate description for this movie."
 
