@@ -24,6 +24,7 @@ def intialize_movie(**kwargs):
         instance.number = options[0]["id"]
         instance.name = options[0]["original_title"]
     else:
+        instance.number = 0
         instance.description = "Unable to locate description for this movie."
 
 post_init.connect(intialize_movie, Movie)
