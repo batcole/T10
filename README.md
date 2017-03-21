@@ -18,6 +18,8 @@ We intend on using [TMDB](https://www.themoviedb.org/?language=en) and the respe
 
 We are not accepting outside contributions at this time.
 
+If you are contributing from within the group, please review your assigned issues (or assign yourself an issue). Create a branch with an appropriate name, and do you changes on that branch. When you are finished we will review the Pull Request and merge changes into master.
+
 ## License
 
 This project is yet to be licensed.
