@@ -20,6 +20,8 @@ We are not accepting outside contributions at this time.
 
 If you are contributing from within the group, please review your assigned issues (or assign yourself an issue). Create a branch with an appropriate name, and do you changes on that branch. When you are finished we will review the Pull Request and merge changes into master.
 
+Please name your branch according to feature/branch-name or bugfix/branch-name.
+
 ## License
 
 This project is yet to be licensed.
