@@ -16,7 +16,6 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
       <form class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search Movie">
@@ -43,5 +42,5 @@
 
 
 <p>{{ movie.description }}</p>
-<img src="https://api.themoviedb.org/3/movie/603/images?api_key=d6e95084e7163fd1678cf3aab908f965&language=en-US">
+<img src="https://image.tmdb.org/t/p/w500/{{movie.img_url}}" class="center-block">
 
