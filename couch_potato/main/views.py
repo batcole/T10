@@ -14,6 +14,8 @@ def detail(request, movie_id):
 def index(request):
     if(request.GET.get('submitMovie')):
         search_query = request.GET.get('search_box', None)
+        if search_query == "":
+            return
         print(search_query)
         results = Movie.objects.filter(Q(name__icontains=search_query))
         print("search results:", results)
