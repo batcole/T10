@@ -24,6 +24,7 @@ def intialize_movie(**kwargs):
         instance.number = options[0]["id"]
         instance.name = options[0]["original_title"]
         instance.img_url = options[0]["poster_path"]
+        instance.backdrop = options[0]["backdrop_path"]
     else:
         instance.number = 0
         instance.description = "Unable to locate description for this movie."
