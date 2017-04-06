@@ -4,4 +4,4 @@ __pycache__
 *.pyo
 keys.py
 .idea
-
+db.sqlite3
