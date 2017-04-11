@@ -5,11 +5,11 @@
 # Sample API call:
 # https://itunes.apple.com/search?parameterkeyvalue
 
-import requests
+import itunes
 import json
 
 
-def apple_search_for_movie(movie_name):
+def itunes_search_for_movie(movie_name):
     search = tmdb.Search()
     if movie_name == "":
         return []
