@@ -18,3 +18,4 @@ def search_for_movie(movie_name):
     results = search.movie(query=movie_name)["results"]
     top_three = results[:3]
     return top_three
+

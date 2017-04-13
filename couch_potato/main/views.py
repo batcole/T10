@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.template import loader
-
+from django.db.models import Q
+from .tmdb import search_for_movie
 from .models import Movie
 
 # Create your views here.
@@ -13,4 +14,13 @@ def detail(request, movie_id):
 def index(request):
     movie_list = Movie.objects.all()
     context = {'movie_list': movie_list}
+    if(request.GET.get('submitMovie')):
+        search_query = request.GET.get('search_box', None)
+        movie_list = Movie.objects.filter(Q(name__icontains=search_query))
+        if len(movie_list) == 0:
+            m = Movie(name=search_query)
+            m.save()
+            movie_list = Movie.objects.filter(Q(name__icontains=search_query))
+        context = {'movie_list': movie_list}
+        return render(request, 'main/index.html', context)
     return render(request, 'main/index.html', context)
