@@ -11,7 +11,9 @@ class Movie(models.Model):
     name = models.CharField(max_length=200)
     number = models.IntegerField(default=0)
     description = models.TextField(default="undescribed")
-
+    img_url = models.TextField(default="none")
+    backdrop = models.TextField(default="none")
+    
     def __str__(self):
         return "Name: " + self.name + " Number: " + str(self.number)
     
