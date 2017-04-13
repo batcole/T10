@@ -3,4 +3,4 @@ __pycache__
 *.pyc
 *.pyo
 keys.py
-.idea/
+*.idea*
