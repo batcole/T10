@@ -22,7 +22,7 @@ app_name = 'main'
 
 urlpatterns = [
     # ex: /main/
-    url(r'^$', views.index, name='index'),
+    url(r'^index/$', views.index, name='index'),
     
     # ex: /main/5/
     url(r'^(?P<movie_id>[0-9]+)/$', views.detail, name='detail'),
