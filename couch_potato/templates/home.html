@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% if user.is_authenticated %}
+  	  <h2>Hi, {{ user.username }}!</h2>
+  	  <a href="../main/index">Search for movies!</a>
+   {% else %}
+      <h3>Welcome!</h3>
+      <h4>Please log in or sign up to continue!</h4>
+    {% endif %}
+
+{% endblock %}
