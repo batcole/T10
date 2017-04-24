@@ -8,12 +8,11 @@
   <header>
     <h1>Couch Potato</h1>
     {% if user.is_authenticated %}
-      Hi {{ user.username }}!
+<!--       Hi {{ user.username }}! -->
       <a href="{% url 'logout' %}">logout</a>
     {% else %}
       <a href="{% url 'signup' %}">signup</a>
       <a href="{% url 'login' %}">login</a>
-      <a href="../main/index">Search for movies!</a>
     {% endif %}
   </header>
   <hr>
