@@ -49,6 +49,12 @@
 <h2>{{movie.name}}</h2>
 <h4><img style="float: left; margin: 0px 15px 15px 0px;" src="https://image.tmdb.org/t/p/w500/{{movie.img_url}}" width="300" />
 {{ movie.description }} <br style="clear: both;" /></h4>
+{% if movie.apple_url != "none" %}
+<button>
+ <a href={{movie.apple_url}}>Apple</a>
+</button>
+{% else %}
+{% endif %}
 <div/>
 </body>
 
