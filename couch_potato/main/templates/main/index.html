@@ -9,19 +9,12 @@
   <title>Couch Potato</title>
   <meta name="description" content="Couch Potato">
   <meta name="author" content="SitePoint">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
   <header>
     
   </header>
-  <script src="js/scripts.js"></script>
 </body>
 </html>
 
@@ -38,7 +31,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Home</a>
+      <a class="navbar-brand" href="/main/index">Home</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,12 +47,12 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
 
-        <li class="button">
-          <a> {{ user.username }} </a>
+        <li>
+          <a href="/"> {{ user.username }} </a>
         </li>
 
         <li>
-          <a href="{% url 'logout' %}">logout</a>
+          <a href="{% url 'logout' %}">Logout</a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -75,5 +68,5 @@
 	{% endfor %}
     </ul>
 {% else %}
-    <p>No movies are available.</p>
+    <p>No movies are available! Get searching!</p>
 {% endif %}
