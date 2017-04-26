@@ -20,9 +20,10 @@ def apple_search(term):
         try:
             price = result['trackPrice']
             url = result['trackViewUrl']
+            return (price, url)
         except KeyError:
             print("Call to apple API failed")
-        return (price, url)
+            return (0.00, "none")
     else:
         # we don't have any results for apple
         return (0.00, "none")
